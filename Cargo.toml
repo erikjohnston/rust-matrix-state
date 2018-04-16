@@ -1,0 +1,24 @@
+[package]
+authors = ["Erik Johnston"]
+name = "rust-state"
+version = "0.1.0"
+
+[dependencies]
+clap = "2.31.2"
+failure = "0.1.1"
+failure_derive = "0.1.1"
+heapsize = "0.4.2"
+heapsize_derive = "0.1.4"
+indicatif = "0.9.0"
+postgres = "0.15.2"
+procinfo = "0.4.2"
+serde = "1.0.37"
+serde_derive = "1.0.37"
+serde_json = "1.0.13"
+smallvec = "0.6.0"
+
+[dependencies.sha1]
+features = ["std"]
+version = "0.6.0"
+[profile.release]
+debug = true
